@@ -1,0 +1,3 @@
+https://www.baeldung.com/java-postman-send-array#:~:text=Sending%20an%20Array,sending%20it%20to%20the%20server.
+
+
