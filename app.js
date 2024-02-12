@@ -4,8 +4,8 @@ import cookieParser from 'cookie-parser';
 import {config} from 'dotenv';
 import morgan from 'morgan';
 
-import userRoutes from '../Server2/routes/user.routes.js'
-import courseRoutes from '../Server2/routes/course.routes.js'
+import userRoutes from './routes/user.routes.js'
+import courseRoutes from './routes/course.routes.js'
 import paymentRoutes from './routes/payment.routes.js';
 import errorMiddleware from './middlewares/error.middleware.js';
 
