@@ -23,7 +23,7 @@ app.use(express.urlencoded({extended:true})); // used to take querries, params f
 app.use(cookieParser()); // when token is setup , we can parse it
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: ['https://coursify-f0sx.onrender.com'],
     credentials: true, // Cookie can move easily
 
 }))
