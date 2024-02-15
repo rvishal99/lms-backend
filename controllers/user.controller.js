@@ -12,7 +12,7 @@ import crypto from 'crypto';
 const cookieOptions = {
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7days'
     httpOnly: true,
-    // secure: true
+    secure: true
 }
 
 
@@ -83,7 +83,7 @@ const register = async (req, res, next) => {
 
 
 
-        res.cookie  ('token', token, cookieOptions);
+        // res.cookie('token', token, cookieOptions);
 
         res.status(201).json({
             success: true,

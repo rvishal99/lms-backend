@@ -24,8 +24,9 @@ router.post("/reset/:resetToken", resetPassword)
 router.post("/change-password",
     isLoggedIn,
     changePassword)
+    
 router.put("/update/:id",
-    isLoggedIn,
+    // isLoggedIn,
     upload.single("avatar"), updateUser)
 
 
