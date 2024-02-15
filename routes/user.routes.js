@@ -12,9 +12,9 @@ router.post('/register', upload.single("avatar"), register); // * uploading sing
 router.post('/login', login);
 router.post('/logout', logout);
 
-router.get(
+router.post(
     '/me/:id',
-    // isLoggedIn,
+    isLoggedIn,
     getProfile);
 
 router.post("/reset", forgotPassword)
@@ -22,10 +22,10 @@ router.post("/reset/:resetToken", resetPassword)
 
 
 router.post("/change-password",
-    // isLoggedIn,
+    isLoggedIn,
     changePassword)
 router.put("/update/:id",
-    // isLoggedIn,
+    isLoggedIn,
     upload.single("avatar"), updateUser)
 
 

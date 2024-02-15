@@ -29,6 +29,7 @@ app.use(cors({
 }))
 
 
+
 app.use('/ping',function(req,res){ // to check whether our server is up or not with bare configurations
     res.send('/pong')
 })
