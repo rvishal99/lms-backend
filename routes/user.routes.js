@@ -12,7 +12,7 @@ router.post('/register', upload.single("avatar"), register); // * uploading sing
 router.post('/login', login);
 router.post('/logout', logout);
 
-router.get(
+router.post(
     '/me/:id',
     isLoggedIn,
     getProfile);
