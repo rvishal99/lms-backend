@@ -191,7 +191,8 @@ const forgotPassword = async (req, res, next) => {
     let emailId = email.split(".com")[0];
 
 
-    const resetPasswordURL = `${process.env.FRONTEND_URL}/reset-password/${resetToken}${emailId}`;
+    const resetPasswordURL = `https://coursify-f0sx.onrender.com/reset-password/${resetToken}${emailId}`;
+    // const resetPasswordURL = `${process.env.FRONTEND_URL}/reset-password/${resetToken}${emailId}`;
 
 
     console.log(resetPasswordURL)
