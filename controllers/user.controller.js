@@ -12,7 +12,7 @@ import crypto from 'crypto';
 const cookieOptions = {
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7days'
     httpOnly: true,
-    secure: true
+    // secure: true
 }
 
 
@@ -127,12 +127,13 @@ const login = async (req, res, next) => {
         user.password = undefined
 
 
-        res.cookie('token', token, cookieOptions);
+        // res.cookie('token', token, cookieOptions);
 
         res.status(200).json({
             success: true,
             message: 'User loggedIn successfully',
             user,
+            token
         });
     }
     catch (e) {
