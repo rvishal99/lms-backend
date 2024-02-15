@@ -127,12 +127,13 @@ const login = async (req, res, next) => {
         user.password = undefined
 
 
-        res.cookie('token', token, cookieOptions);
+        // res.cookie('token', token, cookieOptions);
 
         res.status(200).json({
             success: true,
             message: 'User loggedIn successfully',
             user,
+            token
         });
     }
     catch (e) {
