@@ -4,8 +4,8 @@ import jwt from 'jsonwebtoken'
 
 const isLoggedIn = async (req, res, next) => {
 
-    const { token } = req.cookies;
-    console.log("cookies:: ", req.cookies);
+    const { token } = req.body;
+    // console.log("cookies:: ", req.body);
 
 
     console.log(`token:${token}`)
